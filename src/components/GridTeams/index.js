@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { api_espn } from '../../services/api';
 import { Container, WeekBox } from './styles';
 
@@ -22,9 +23,12 @@ function GridTeams() {
   return (
     <>
       <WeekBox>
-        <h1>{'Week ' + week}</h1>
-        <h1>Schedule</h1>
+        <Link to='/schedule' className='week-text'>
+          <h1>{'Week ' + week}</h1>
+          <h1>Schedule</h1>
+        </Link>
       </WeekBox>
+
       <Container>
         {teams.map(({ team }) => <>
           <div className='icon-box' key={team.id} >
