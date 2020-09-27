@@ -9,6 +9,7 @@ export const Container = styled.div`
   justify-items: center;
   grid-gap: 16px;
 
+
   .icon-box {
     display: flex;
     flex-direction: column;
@@ -18,6 +19,8 @@ export const Container = styled.div`
     height: 200px;
     border-radius: 15px;
     background: #F0F0F0;
+    text-decoration: none;
+    color: #111;
   }
 
   img {

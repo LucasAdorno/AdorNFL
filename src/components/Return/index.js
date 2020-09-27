@@ -7,7 +7,7 @@ function Return() {
   return (
     <Container>
       <Link to='/'>
-        Return to Home
+        RETURN TO HOME
       </Link>
     </Container>
 

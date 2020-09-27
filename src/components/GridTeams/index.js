@@ -31,10 +31,10 @@ function GridTeams() {
 
       <Container>
         {teams.map(({ team }) => <>
-          <div className='icon-box' key={team.id} >
+          <Link to={'/team/'+ team.abbreviation} className='icon-box' key={team.id} >
             <img src={team.logos[0].href} alt='team logo' />
             <h2>{team.abbreviation}</h2>
-          </div>
+          </Link>
         </>)}
       </Container>
     </>
