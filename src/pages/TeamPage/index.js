@@ -23,12 +23,15 @@ function TeamPage({ match }) {
     api_sports.get().then(response =>
       response.data.teams.map(team => {
         let abbreviation = team.strTeamShort;
+        let correct_team;
 
         if (abbreviation === 'OAK') abbreviation = 'LV';
         else if (abbreviation === 'LA') abbreviation = 'LAR';
         else if (abbreviation === 'WAS') abbreviation = 'WSH';
 
-        if (abbreviation === match.params.id) setCurrentdb(team);
+        if (abbreviation === match.params.id) correct_team = team;
+        
+        return setCurrentdb(correct_team)
       }))
   }, [match.params.id])
 
