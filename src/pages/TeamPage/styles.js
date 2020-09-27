@@ -20,6 +20,10 @@ export const Container = styled.div`
     width: 100%;
   }
 
+  #title-page h1 {
+    font-size: 26px;
+  }
+
   #main-page {
     margin: 16px 4px 16px 4px;
     padding: 20px 16px;
