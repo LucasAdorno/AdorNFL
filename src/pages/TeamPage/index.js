@@ -29,9 +29,7 @@ function TeamPage({ match }) {
         else if (abbreviation === 'LA') abbreviation = 'LAR';
         else if (abbreviation === 'WAS') abbreviation = 'WSH';
 
-        if (abbreviation === match.params.id) correct_team = team;
-        
-        return setCurrentdb(correct_team)
+        if (abbreviation === match.params.id) setCurrentdb(team)
       }))
   }, [match.params.id])
 
