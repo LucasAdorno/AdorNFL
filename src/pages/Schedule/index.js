@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { api_espn } from '../../services/api'
 import Return from '../../components/Return';
 import { Container, ScheduleLine } from './styles';
@@ -25,7 +26,9 @@ function Schedule() {
           <ScheduleLine>
             <div className='home-team'>
               <h2>{competitions[0].competitors[0].team.abbreviation}</h2>
-              <img src={competitions[0].competitors[0].team.logo} />
+              <Link to={'/team/' + competitions[0].competitors[0].team.abbreviation}>
+                <img src={competitions[0].competitors[0].team.logo} alt='team logo' />
+              </Link>
               <h2>{competitions[0].competitors[0].score}</h2>
             </div>
 
@@ -36,7 +39,9 @@ function Schedule() {
 
             <div className='away-team'>
               <h2>{competitions[0].competitors[1].score}</h2>
-              <img src={competitions[0].competitors[1].team.logo} />
+              <Link to={'/team/' + competitions[0].competitors[1].team.abbreviation}>
+                <img src={competitions[0].competitors[1].team.logo} alt='team logo' />
+              </Link>
               <h2>{competitions[0].competitors[1].team.abbreviation}</h2>
             </div>
           </ScheduleLine>
