@@ -24,12 +24,11 @@ export const Container = styled.div`
   }
 
   img {
-    width: 90px;
+    width: 100px;
   }
 
   h2 {
     font-weight: 600;
-    font-size: 24px;
   }
 
   @media(min-width: 1200px) {
