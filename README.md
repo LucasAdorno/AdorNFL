@@ -22,7 +22,7 @@
 ## Preview
 
 <div align="center">
-  <img src="screenshots/homepage.png" width="800">
+  <img src="screenshots/homepage.jpg" width="800">
   <img src="screenshots/Schedule.png" width="800">
   <img src="screenshots/TeamPage.png" width="800">
 </div>
