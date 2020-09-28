@@ -33,8 +33,8 @@ function Schedule() {
             </div>
 
             <div className='clock-div'>
-              <h3>{status.period}Q</h3>
-              <h3>{status.displayClock}</h3>
+              <h4>{status.period}Q</h4>
+              <h4>{status.displayClock}</h4>
             </div>
 
             <div className='away-team'>
