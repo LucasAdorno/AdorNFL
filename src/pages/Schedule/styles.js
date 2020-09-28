@@ -46,11 +46,11 @@ export const ScheduleLine = styled.div`
   }
 
   .home-team img, .away-team img {
-    width: 70px;
+    width: 60px;
   }
 
  .home-team h2, .away-team h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .clock-div{
