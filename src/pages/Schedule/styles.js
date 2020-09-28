@@ -41,8 +41,7 @@ export const ScheduleLine = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 18px
-
+    padding: 8px;
   }
 
   .home-team img, .away-team img {
@@ -61,6 +60,11 @@ export const ScheduleLine = styled.div`
   }
 
   @media(min-width: 1200px) {
+
+    .home-team, .away-team {
+        padding: 18px;
+      }
+
     .home-team img, .away-team img {
       width: 88px;
     }
