@@ -21,7 +21,7 @@ export const Container = styled.div`
   }
 
   #title-page h1 {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   #main-page {
@@ -71,11 +71,15 @@ export const Container = styled.div`
   
   @media(min-width: 1200px) {
     #main-page {
-    margin: 16px 4px 16px 4px;
-    padding: 20px 120px;
-    width: 96%;
-    background: #E4E4E4;
-  }
+      margin: 16px 4px 16px 4px;
+      padding: 20px 120px;
+      width: 96%;
+      background: #E4E4E4;
+    }
+
+    #title-page h1 {
+      font-size: 26px;
+    }
   }
 
 `;
