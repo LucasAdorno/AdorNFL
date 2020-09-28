@@ -46,7 +46,11 @@ export const ScheduleLine = styled.div`
   }
 
   .home-team img, .away-team img {
-    width: 88px;
+    width: 70px;
+  }
+
+ .home-team h2, .away-team h2 {
+    font-size: 24px;
   }
 
   .clock-div{
@@ -54,6 +58,16 @@ export const ScheduleLine = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  @media(min-width: 1200px) {
+    .home-team img, .away-team img {
+      width: 88px;
+    }
+
+   .home-team h2, .away-team h2 {
+      font-size: 28px;
+    }
   }
 
 
